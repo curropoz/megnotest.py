@@ -44,13 +44,13 @@ extent = [min(par_a),max(par_a),min(par_e),max(par_e)]
 ax.set_xlim(extent[0],extent[1])
 ax.set_xlabel("semi-major axis $a$")
 ax.set_ylim(extent[2],extent[3])
-ax.set_ylabel("eccentricity $e$")
+ax.set_ylabel("inclination $i$")
 im = ax.imshow(results2d, interpolation="none", vmin=1.9, vmax=4, cmap="jet", origin="lower", aspect='auto', extent=extent)
 cb = plt.colorbar(im, ax=ax)
 cb.set_label("MEGNO $\\langle Y \\rangle$")
 
 
-plt.savefig('megno.png',
+plt.savefig('megnoai.png',
                   bbox_inches='tight', # Elimina margenes en blanco
                   dpi=200)             # DPI = puntos por pulgada
 
